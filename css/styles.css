@@ -107,7 +107,20 @@ body {
 }
 
 .hero {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/hero/hero.jpg);
   background-color: #2f303a;
+
   text-align: center;
   padding-bottom: 200px;
   padding-top: 200px;
@@ -380,6 +393,7 @@ h2 {
 
 .description {
   padding-left: 24px;
+  padding-top: 20px;
   text-align: left;
 }
 
@@ -393,7 +407,6 @@ h2 {
   color: var(--title-color);
   height: 36px;
   margin-bottom: 0;
-  margin-top: 20px;
 }
 
 .project-description {
@@ -433,11 +446,18 @@ h2 {
   display: flex;
   margin-left: auto;
 }
+
 .auth-nav .link {
   display: block;
   padding-top: 21px;
   padding-bottom: 21px;
 }
+
+/*.item {
+  display: inline-flex;
+  align-items: center;
+}*/
+
 .auth-nav .item + .item {
   margin-left: 50px;
 }
@@ -453,10 +473,58 @@ h2 {
 .nav {
   margin-left: 93px;
 }
+.item > .mail-icon::before {
+  content: " ";
+  display: inline-flex;
+  align-items: center;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url(../icons/envelope.svg);
+  background-size: contain;
+  background-position: center;
+}
+
+.item > .phone-icon::before {
+  content: " ";
+  display: inline-flex;
+  align-items: center;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../icons/phone.svg);
+  background-size: contain;
+  background-position: center;
+}
 
 .list .item-text {
   width: calc((100% - 90px) / 4);
-  /* padding-top: 94px;*/
+}
+
+.item-text::before {
+  content: " ";
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.antenna-icon::before {
+  background-image: url(../icons/antenna.svg);
+}
+
+.clock-icon::before {
+  background-image: url(../icons/clock.svg);
+}
+.diagram-icon::before {
+  background-image: url(../icons/diagram.svg);
+}
+
+.austranaut-icon::before {
+  background-image: url(../icons/astronaut.svg);
 }
 
 .list .item-text + .item-text {
@@ -515,6 +583,10 @@ h2 {
 .contact-footer {
   margin-bottom: 9px;
   height: 21px;
+}
+
+.contact-footer:last-child {
+  margin-bottom: 0;
 }
 
 .list-nav {
