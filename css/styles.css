@@ -558,7 +558,6 @@ h2 {
 .box {
   margin-right: 30px;
   margin-bottom: 30px;
-  /* height: 404px;*/
   background: #ffffff;
   width: 370px;
   text-align: center;
@@ -603,4 +602,41 @@ h2 {
 
 .btn-portfolio:last-child {
   margin-right: 0;
+}
+
+.social-icons-svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-icons {
+  display: flex;
+  padding-left: 32px;
+  margin-top: 16px;
+}
+
+.social-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--white-clr);
+  border-radius: 50%;
+}
+
+.social-icons-link:hover .social-icons-svg,
+.social-icons-link:focus .social-icons-svg {
+  fill: var(--white-clr);
+  background-color: var(--accent-color);
+}
+
+.social-icons-link:hover,
+.social-icons-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-icons-item:not(:last-child) {
+  margin-right: 10px;
 }
