@@ -186,6 +186,8 @@ body {
 }
 
 .link-nav {
+  display: inline-flex;
+  align-items: center;
   color: var(--title-color);
 }
 
@@ -436,6 +438,7 @@ h2 {
   padding-top: 32px;
 }
 .site-nav .item {
+  display: flex;
   margin-right: 50px;
 }
 .site-nav .item:last-child {
@@ -443,20 +446,49 @@ h2 {
 }
 
 .auth-nav {
-  display: flex;
+  display: flex-block;
   margin-left: auto;
 }
 
 .auth-nav .link {
-  display: block;
+  display: inline-flex;
+  align-items: center;
   padding-top: 21px;
   padding-bottom: 21px;
 }
 
-/*.item {
+.icon-nav {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  fill: var(--main-text-color);
+}
+
+.envelope-icon {
+  width: 16px;
+  height: 12px;
+}
+
+.phone-icon {
+  width: 10px;
+  height: 16px;
+}
+
+.auth-nav .link:hover .envelope-icon,
+.auth-nav .link:focus .envelope-icon {
+  fill: var(--accent-color);
+}
+
+.auth-nav .link:hover .phone-icon,
+.auth-nav .link:focus .phone-icon {
+  fill: var(--accent-color);
+}
+
+.item {
   display: inline-flex;
   align-items: center;
-}*/
+}
 
 .auth-nav .item + .item {
   margin-left: 50px;
@@ -472,29 +504,6 @@ h2 {
 
 .nav {
   margin-left: 93px;
-}
-.item > .mail-icon::before {
-  content: " ";
-  display: inline-flex;
-  align-items: center;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-image: url(../icons/envelope.svg);
-  background-size: contain;
-  background-position: center;
-}
-
-.item > .phone-icon::before {
-  content: " ";
-  display: inline-flex;
-  align-items: center;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  background-image: url(../icons/phone.svg);
-  background-size: contain;
-  background-position: center;
 }
 
 .list .item-text {
