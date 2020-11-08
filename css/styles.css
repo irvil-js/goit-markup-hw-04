@@ -194,7 +194,6 @@ body {
 .section-title {
   margin-top: 0px;
   margin-bottom: 50px;
-
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -267,6 +266,8 @@ body {
   background: #ffffff;
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-item:last-child .profession {
@@ -485,13 +486,8 @@ h2 {
   fill: var(--accent-color);
 }
 
-.item {
-  display: inline-flex;
-  align-items: center;
-}
-
 .auth-nav .item + .item {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 .main-nav {
   display: flex;
@@ -648,4 +644,104 @@ h2 {
 
 .social-icons-item:not(:last-child) {
   margin-right: 10px;
+}
+
+.social-net {
+  margin-left: 70px;
+}
+
+.join {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-clr);
+  height: 16px;
+  margin-bottom: 20px;
+}
+
+.icons-footer {
+  fill: var(--white-clr);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-svg {
+  fill: var(--white-clr);
+}
+
+.link.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-icons-svg {
+  fill: #afb1b8;
+  display: inline-block;
+}
+
+.first-client {
+  width: 44px;
+  height: 49px;
+}
+
+.second-client {
+  width: 40px;
+  height: 52px;
+}
+
+.third-client {
+  width: 41px;
+  height: 43px;
+}
+
+.fourth-client {
+  width: 80px;
+  height: 42px;
+}
+
+.fifth-client {
+  width: 59px;
+  height: 47px;
+}
+
+.sixth-client {
+  width: 88px;
+  height: 45px;
+}
+
+.our-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.link.client-link:hover,
+.link.client-link:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.link.client-link:hover .client-icons-svg,
+.link.client-link:focus .client-icons-svg {
+  fill: var(--accent-color);
+}
+
+.footer-css .container {
+  display: flex;
+}
+
+.social-net .social-icons {
+  padding-left: 0;
+  margin-top: 0;
 }
