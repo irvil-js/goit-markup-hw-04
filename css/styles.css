@@ -351,8 +351,11 @@ h2 {
   line-height: 1.71;
   letter-spacing: 0.03em;
   background-color: #2f303a;
-  padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.left-footer {
+  padding-top: 60px;
 }
 
 .logo-style.footer {
@@ -659,6 +662,7 @@ h2 {
 
 .social-net {
   margin-left: 70px;
+  padding-top: 75px;
 }
 
 .join {
